@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Beuth Logo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="navbar">
+        <strong>BEUTH LOGO</strong>
+        <br>
+        <hr>
+        <br>
+        <strong>Navigation</strong>
+        <div class="btn nav-animation">Animation</div>
+        <div class="btn nav-grid">Grid</div>
+        <div class="btn nav-generator">Generator</div>
+        <br>
+        <hr>
+        <br>
+        <div class="animation-menu">
+            <strong>Animation</strong>
+            <table>
+                <tr>
+                    <td>Amplitude</td>
+                    <td>
+                        <input type="range" min="0" max="3" value="1" step="0.01" class="slider" id="animation-amplitude"
+                            style="display: block;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Period</td>
+                    <td>
+                        <input type="range" min="0" max="5" value="0.5" step="0.01" class="slider" id="animation-period"
+                            style="display: block;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Speed</td>
+                    <td>
+                        <input type="range" min="1" max="30" value="10" step="0.1" class="slider" id="animation-speed"
+                            style="display: block;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Size</td>
+                    <td>
+                        <input type="range" min="50" max="600" value="300" step="1" class="slider" id="animation-size"
+                            style="display: block;">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="grid-menu" style="display: none;">
+            <strong>Grid</strong>
+            <table>
+                <tr>
+                    <td>Zoom</td>
+                    <td>
+                        <input type="range" min="80" max="750" value="250" step="10" class="slider" id="grid-size"
+                            style="display: block;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Show Grid</td>
+                    <td>
+                        <label class="switch">
+                            <input type="checkbox" id="show-grid">
+                            <span class="sslider round"></span>
+                        </label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="generator-menu" style="display: none;">
+            <strong>Generator</strong>
+            <table>
+                <tr>
+                    <td>Speed</td>
+                    <td>
+                        <input type="range" min="0.01" max="0.1" value="0.01" step="0.01" class="slider" id="logo-speed"
+                            style="display: block;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Size</td>
+                    <td>
+                        <input type="range" min="50" max="800" value="500" step="0.1" class="slider" id="logo-size"
+                            style="display: block;">
+                    </td>
+                </tr>
+            </table>
+            <p>Aus gegebenen Anlass:</p>
+            <p>Ein Generator für ein neues Logo und einen neuen Namen.</p>
+            <a href="https://www.beuth-hochschule.de/232/article/6712">Presseinformation 23.01.2020</a>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+        <table>
+            <tr>
+                <td>Darkmode</td>
+                <td>
+                    <label class="switch">
+                        <input type="checkbox" id="darkmode">
+                        <span class="sslider round"></span>
+                    </label>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+    <script src="script.js"></script>
+    <script src="controller.js"></script>
+</body>
+
+</html>

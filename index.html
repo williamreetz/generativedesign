@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Generative Design</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>Generative Designs</h1>
+            <p>By William Reetz</p>
+        </div>
+        <div class="grid-container">
+            <a href="moving_points">
+                <div class="grid-element">
+                    Points
+                </div>
+            </a>
+            <a href="random_islands">
+                <div class="grid-element">
+                    Random Islands
+                </div>
+            </a>
+            <a href="warmup">
+                <div class="grid-element">
+                    Warm Up
+                </div>
+            </a>
+            <a href="perlin-noise">
+                <div class="grid-element">
+                    Perlin Noise
+                </div>
+            </a>
+            <a href="vectors">
+                <div class="grid-element">
+                    Vectors
+                </div>
+            </a>
+            <a href="forces">
+                <div class="grid-element">
+                    Forces
+                </div>
+            </a>
+            <a href="oscillation">
+                <div class="grid-element">
+                    Oscillation
+                </div>
+            </a>
+            <a href="particles">
+                <div class="grid-element">
+                    Particles
+                </div>
+            </a>
+            <a href="physics_I">
+                <div class="grid-element">
+                    Physics I
+                </div>
+            </a>
+            <a href="physics_II">
+                <div class="grid-element">
+                    Physics II
+                </div>
+            </a>
+            <a href="autonomous_agents">
+                <div class="grid-element">
+                    Autonomous Agents
+                </div>
+            </a>
+            <a href="logo-generator">
+                <div class="grid-element">
+                    Logo Generator
+                </div>
+            </a>
+            <a href="starfield">
+                <div class="grid-element">
+                    Star Field
+                </div>
+            </a>
+            <a href="vertices">
+                <div class="grid-element">
+                    Vertices
+                </div>
+            </a>
+        </div>
+        <style>
+            html,
+            body {
+                padding: 0;
+                margin: 0;
+                background: #f3f3f3;
+                font-family: "Segoe UI", Helvetica, sans-serif;
+            }
+
+            .wrapper {
+                margin-right: auto;
+                margin-left: auto;
+                max-width: 960px;
+                padding-right: 4em;
+                padding-left: 4em;
+                min-height: 100vh;
+                /* background: #fff;
+                box-shadow: 0px 0px 20px #bbb; */
+                /* box-shadow: 8px 8px 8px #e0e0e0,
+                    -8px -8px 8px #ffffff; */
+            }
+
+            .header {
+                padding-top: 3em;
+            }
+
+            .header>p {
+                font-weight: bold;
+                color: #888;
+                line-height: 0.5em;
+            }
+
+            .header>h1 {
+                color: #628bc7;
+                font-size: 4em;
+                margin: 0;
+                line-height: 1em;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 2.5em;
+                margin-top: 4em;
+                margin-bottom: 4em;
+                min-height: 100%;
+            }
+
+            @media (max-width: 70em) {
+                .grid-container {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+
+            @media (max-width: 40em) {
+                .grid-container {
+                    grid-template-columns: 1fr;
+                }
+            }
+
+            .grid-element {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #eee;
+                padding: 1em;
+                color: rgba(0, 0, 0, 0.5);
+                height: 5em;
+                font-size: 1.25em;
+                font-weight: bold;
+                border-radius: 1em;
+                background: #f3f3f3;
+                box-shadow: 8px 8px 8px #e0e0e0,
+                    -8px -8px 8px #ffffff;
+            }
+
+            .grid-element:hover {
+                transition-duration: 0.4s;
+                background: #eee;
+            }
+
+            .grid-element:active {
+                transition: box-shadow 0.1s ease-in-out;
+                box-shadow: 2px 2px 8px #e0e0e0,
+                    -2px -2px 8px #ffffff;
+                /* box-shadow: inset 5px 5px 10px #c2c2c2,
+                    inset -5px -5px 10px #ffffff; */
+            }
+
+            a {
+                text-decoration: none;
+            }
+        </style>
+</body>
+
+</html>
